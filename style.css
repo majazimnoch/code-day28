@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sixtyfour&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #031003;
+  box-sizing: border-box;
+  color: rgb(255, 249, 249);
+  background-image: url("./panic.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: 1024px) {
+    background-size: cover;
+  }
+}
+
+body {
+  padding: 20px 30px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px 0px 4px 2px #fbfbf8d3;
+
+  @media (max-width: 667px) {
+    margin: 20px 15px;
+  }
+}
+
+.top {
+  background-image: url("./panic.jpg");
+  padding: 250px 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Sixtyfour", sans-serif;
+  background-image: none;
+  padding: 5px 0;
+}
+
+.enter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-image: none;
+  background-color: #031003;
+  padding: 30px 0;
+}
+
+label {
+    background-color: #031003;
+    background-image: none;
+    font-size: 20px;
+}
+
+textarea {
+    padding: 20px 10px;
+    border: none;
+    color: black;
+    background-image: none;
+    background-color: #ffffff;
+    min-height: 50px;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    resize: both;
+    font-family: "Roboto", sans-serif;
+}
+
+.output-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  will-change: box-shadow, transform;
+  background: #fcfcfd;
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  height: 48px;
+  padding: 0 32px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #36395a;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+button:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  transform: translateY(-2px);
+}
+
+button:active{
+        box-shadow: inset 0px 3px 7px #d6d6e7;
+        transform: translateY(2px)
+}
