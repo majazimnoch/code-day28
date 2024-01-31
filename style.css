@@ -73,19 +73,22 @@ textarea {
   font-family: "Roboto", sans-serif;
 }
 
-input {
+textarea.input-text {
   padding: 20px 10px;
   border: none;
   color: white;
   background-image: none;
   background-color: #04ff0887;
-  min-height: 50px;
+  min-height: 100px;
   max-width: 100%;
   min-width: 100%;
   overflow: hidden;
   resize: both;
   font-family: "Roboto", sans-serif;
   margin-bottom: 30px;
+  text-wrap: nowrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .output-section {
