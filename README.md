@@ -7,7 +7,7 @@ I was playing around with some JavScript built-in methods and when I practised `
 
 ## Breaking down the code 
 I started off my writing my HTML. I devided the porject into three main segments: top div, button and bottom div. In the top one, I placed my textarea with an id of inputSentence, which I later used via `getElementById` in my JS code. 
-Button has an id of 'panicBtn'. It gets EventListener of `click` which executes the anonymous function that retrives the user input from the first textarea, Sets the value of the "outputPanic" textarea to the generated panicked text, calls the panic function on the user's text, and plays the sound using the `panicSound` audio object.
+Button has an id of 'panicBtn'. It gets EventListener of `click` which executes the anonymous function that retrives the user input from the first textarea, Sets the value of the "outputPanic" textarea to the generated panicked text, calls the panic function on the user's text, and plays the sound using the `panicSound` Audio object.
 
 ## Demo
 Click <a href="https://heydrama.netlify.app/">here</a>.
