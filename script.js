@@ -2,6 +2,9 @@ const inputSentence = document.getElementById("inputSentence");
 const panicBtn = document.getElementById("panicBtn");
 const outputPanic = document.getElementById("outputPanic");
 
+const panicSound = new Audio("techno.mp3");
+
+// short code before if else
 // function panic(str) {
 //     return str.split(' ').join(' 😱 ').toUpperCase() + '!';
 // }
@@ -20,4 +23,6 @@ panicBtn.addEventListener("click", function() {
     const inputText = inputSentence.value;
     const panicText = panic(inputText);
     outputPanic.value = panicText;
+
+    panicSound.play();
 })
