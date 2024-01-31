@@ -33,7 +33,7 @@ body {
 
 .top {
   background-image: url("./panic.jpg");
-  padding: 250px 100px;
+  padding: 100px 100px;
   background-position: center;
   background-size: cover;
 }
@@ -75,11 +75,12 @@ textarea {
 
 textarea.input-text {
   padding: 20px 10px;
+  font-size: 25px;
   border: none;
   color: white;
   background-image: none;
   background-color: #04ff0887;
-  min-height: 100px;
+  min-height: 150px;
   max-width: 100%;
   min-width: 100%;
   overflow: hidden;
