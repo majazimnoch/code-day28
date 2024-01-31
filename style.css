@@ -15,7 +15,7 @@
 }
 
 body {
-  padding: 20px 30px;
+  padding: 0 30px 20px 30px;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,8 @@ body {
   max-width: 400px;
   font-family: "Roboto", sans-serif;
   box-shadow: 0px 0px 4px 2px #fbfbf8d3;
+  background-image: none;
+  background-color: #031003;
 
   @media (max-width: 667px) {
     margin: 20px 15px;
@@ -52,29 +54,46 @@ h1 {
 }
 
 label {
-    background-color: #031003;
-    background-image: none;
-    font-size: 20px;
+  background-color: #031003;
+  background-image: none;
+  font-size: 20px;
 }
 
 textarea {
-    padding: 20px 10px;
-    border: none;
-    color: black;
-    background-image: none;
-    background-color: #ffffff;
-    min-height: 50px;
-    max-width: 100%;
-    min-width: 100%;
-    overflow: hidden;
-    resize: both;
-    font-family: "Roboto", sans-serif;
+  padding: 20px 10px;
+  border: none;
+  color: black;
+  background-image: none;
+  background-color: #ffffff;
+  min-height: 50px;
+  max-width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  resize: both;
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  padding: 20px 10px;
+  border: none;
+  color: white;
+  background-image: none;
+  background-color: #04ff0887;
+  min-height: 50px;
+  max-width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  resize: both;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
 }
 
 .output-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-image: none;
+  background-color: #031003;
 }
 
 button {
@@ -84,24 +103,25 @@ button {
   cursor: pointer;
   transition: box-shadow 0.15s ease, transform 0.15s ease;
   will-change: box-shadow, transform;
-  background: #fcfcfd;
+  background: #01335c;
   box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
     0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
   height: 48px;
   padding: 0 32px;
   font-size: 18px;
   border-radius: 6px;
-  color: #36395a;
+  color: white;
   transition: box-shadow 0.15s ease, transform 0.15s ease;
+  font-family: "Roboto", sans-serif;
 }
 
 button:hover {
   box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
-    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #04ff08;
   transform: translateY(-2px);
 }
 
-button:active{
-        box-shadow: inset 0px 3px 7px #d6d6e7;
-        transform: translateY(2px)
+button:active {
+  box-shadow: inset 0px 3px 7px #d6d6e7;
+  transform: translateY(2px);
 }
